@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {  
+      title: {
+        text: "Decreased"      
+      },
+      data: [
+      {             
+        type: "column",
+        dataPoints: [
+       
+        { y: 11, label: "30/01/2020" },
+        { y: 10, label: "01/02/2020" },
+        { y: 10, label: "03/02/2020" },
+        { y: 15, label: "04/02/2020" },
+        { y: 0, label: "05/02/2020" },
+        { y: 5, label: "06/02/2020" },
+        { y: 55, label: "07/02/2020" },
+        { y: 5, label: "08/02/2020" },
+        { y: 5, label: "09/02/2020" }
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 60%;">
+  </div>
+  <div>
+      <button type="button">Download</button>
+      <input type="text">
+      <button type="button">Send</button>
+  </div>
+</body>
+</html>
